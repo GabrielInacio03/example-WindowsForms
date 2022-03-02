@@ -32,6 +32,7 @@ namespace exemplo_windowsForms
             this.btnOk = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
+            this.btnAbrir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOk
@@ -62,11 +63,23 @@ namespace exemplo_windowsForms
             this.txtNome.Size = new System.Drawing.Size(144, 20);
             this.txtNome.TabIndex = 2;
             // 
+            // btnAbrir
+            // 
+            this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrir.Location = new System.Drawing.Point(280, 51);
+            this.btnAbrir.Name = "btnAbrir";
+            this.btnAbrir.Size = new System.Drawing.Size(111, 23);
+            this.btnAbrir.TabIndex = 3;
+            this.btnAbrir.Text = "Abrir nova janela";
+            this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 368);
+            this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOk);
@@ -82,6 +95,7 @@ namespace exemplo_windowsForms
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Button btnAbrir;
     }
 }
 

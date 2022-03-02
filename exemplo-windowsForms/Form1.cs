@@ -21,5 +21,12 @@ namespace exemplo_windowsForms
         {
             txtNome.Text = "Olá Inácio";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form = new FrmShow();
+            form.lblMensagem.Text = txtNome.Text;
+            form.Show(); //abre uma nova instância do objeto
+        }
     }
 }

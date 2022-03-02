@@ -8,3 +8,4 @@ C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debu
 C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csproj.CoreCompileInputs.cache
 C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.exe
 C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.pdb
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.FrmShow.resources
