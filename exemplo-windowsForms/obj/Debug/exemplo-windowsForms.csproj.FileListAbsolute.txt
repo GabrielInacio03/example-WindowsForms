@@ -1,0 +1,10 @@
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\bin\Debug\exemplo-windowsForms.exe.config
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\bin\Debug\exemplo-windowsForms.exe
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\bin\Debug\exemplo-windowsForms.pdb
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csprojAssemblyReference.cache
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.Form1.resources
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.Properties.Resources.resources
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csproj.GenerateResource.cache
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csproj.CoreCompileInputs.cache
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.exe
+C:\Users\02471\Desktop\Inacio\exemplo-windowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.pdb
