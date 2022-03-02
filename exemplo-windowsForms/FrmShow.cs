@@ -19,7 +19,7 @@ namespace exemplo_windowsForms
 
         private void FrmShow_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("abrindo FrmShow");
         }
     }
 }

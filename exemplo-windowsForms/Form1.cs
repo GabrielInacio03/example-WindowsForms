@@ -28,5 +28,9 @@ namespace exemplo_windowsForms
             form.lblMensagem.Text = txtNome.Text;
             form.Show(); //abre uma nova instância do objeto
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
     }
 }
