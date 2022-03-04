@@ -33,12 +33,14 @@ namespace exemplo_windowsForms
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnAbrir = new System.Windows.Forms.Button();
+            this.ddlEstado = new System.Windows.Forms.ComboBox();
+            this.lblEstados = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOk
             // 
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btnOk.Location = new System.Drawing.Point(199, 51);
+            this.btnOk.Location = new System.Drawing.Point(601, 333);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 0;
@@ -60,13 +62,13 @@ namespace exemplo_windowsForms
             // 
             this.txtNome.Location = new System.Drawing.Point(16, 54);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(144, 20);
+            this.txtNome.Size = new System.Drawing.Size(269, 20);
             this.txtNome.TabIndex = 2;
             // 
             // btnAbrir
             // 
             this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbrir.Location = new System.Drawing.Point(280, 51);
+            this.btnAbrir.Location = new System.Drawing.Point(682, 333);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(111, 23);
             this.btnAbrir.TabIndex = 3;
@@ -74,11 +76,36 @@ namespace exemplo_windowsForms
             this.btnAbrir.UseVisualStyleBackColor = true;
             this.btnAbrir.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ddlEstado
+            // 
+            this.ddlEstado.FormattingEnabled = true;
+            this.ddlEstado.Items.AddRange(new object[] {
+            "São Paulo",
+            "Rio de Janeiro",
+            "Minas Gerais"});
+            this.ddlEstado.Location = new System.Drawing.Point(328, 54);
+            this.ddlEstado.Name = "ddlEstado";
+            this.ddlEstado.Size = new System.Drawing.Size(155, 21);
+            this.ddlEstado.TabIndex = 4;
+            this.ddlEstado.Text = "Selecione um Estado";
+            // 
+            // lblEstados
+            // 
+            this.lblEstados.AutoSize = true;
+            this.lblEstados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstados.Location = new System.Drawing.Point(324, 31);
+            this.lblEstados.Name = "lblEstados";
+            this.lblEstados.Size = new System.Drawing.Size(68, 20);
+            this.lblEstados.TabIndex = 5;
+            this.lblEstados.Text = "Estados";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 368);
+            this.Controls.Add(this.lblEstados);
+            this.Controls.Add(this.ddlEstado);
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
@@ -97,6 +124,8 @@ namespace exemplo_windowsForms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btnAbrir;
+        private System.Windows.Forms.ComboBox ddlEstado;
+        private System.Windows.Forms.Label lblEstados;
     }
 }
 
