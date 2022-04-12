@@ -35,6 +35,9 @@ namespace exemplo_windowsForms
             this.btnAbrir = new System.Windows.Forms.Button();
             this.ddlEstado = new System.Windows.Forms.ComboBox();
             this.lblEstados = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOk
@@ -99,11 +102,30 @@ namespace exemplo_windowsForms
             this.lblEstados.TabIndex = 5;
             this.lblEstados.Text = "Estados";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 161);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(467, 150);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 122);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "DataGridView";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 368);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblEstados);
             this.Controls.Add(this.ddlEstado);
             this.Controls.Add(this.btnAbrir);
@@ -113,6 +135,7 @@ namespace exemplo_windowsForms
             this.Name = "Form1";
             this.Text = "Aplicação WindowsForms .Net Framework";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +149,8 @@ namespace exemplo_windowsForms
         private System.Windows.Forms.Button btnAbrir;
         private System.Windows.Forms.ComboBox ddlEstado;
         private System.Windows.Forms.Label lblEstados;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -30,22 +30,17 @@ namespace exemplo_windowsForms
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {            
-            List<string> lista = new List<string>();
-            lista.Add("São Paulo");
-            lista.Add("Rio de Janeiro");
-            lista.Add("Minas Gerais");
-            lista.Add("Rio Grande do Sul");
-            lista.Add("Tocantins");
-            lista.Add("Mato Grosso do Sul");
+        {
+            ddlEstado.DataSource = Estado.Lista();
+            ddlEstado.Text = "[Selecione]";
 
-            //limpar dados
-            ddlEstado.Items.Clear();
+            //ddlEstado.Items.Clear();
+            //foreach (var item in Estado.Lista())
+            //{
+            //    ddlEstado.Items.Add(item);
+            //}
 
-            foreach (var l in lista)
-            {
-                ddlEstado.Items.Add(l);
-            }
+            dataGridView1.DataSource = Estado.Lista();
 
         }
 
