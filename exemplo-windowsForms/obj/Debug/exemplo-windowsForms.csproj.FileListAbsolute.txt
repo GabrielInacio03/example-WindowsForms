@@ -21,3 +21,14 @@ C:\Users\inova1\Documents\Inacio\example-WindowsForms\exemplo-windowsForms\obj\D
 C:\Users\inova1\Documents\Inacio\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.Properties.Resources.resources
 C:\Users\inova1\Documents\Inacio\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csproj.GenerateResource.cache
 C:\Users\inova1\Documents\Inacio\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csproj.CoreCompileInputs.cache
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\bin\Debug\exemplo-windowsForms.exe.config
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\bin\Debug\exemplo-windowsForms.exe
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\bin\Debug\exemplo-windowsForms.pdb
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csprojAssemblyReference.cache
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.Form1.resources
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.FrmShow.resources
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.Properties.Resources.resources
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csproj.GenerateResource.cache
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.csproj.CoreCompileInputs.cache
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.exe
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo-windowsForms.pdb
