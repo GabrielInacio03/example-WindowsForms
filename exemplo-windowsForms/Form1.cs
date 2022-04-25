@@ -31,7 +31,8 @@ namespace exemplo_windowsForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ddlEstado.DataSource = Estado.Lista();
+			AtualizarDataHora();
+			ddlEstado.DataSource = Estado.Lista();
             ddlEstado.Text = "[Selecione]";
 
 			//Exemplo 1 de exibição
@@ -100,6 +101,16 @@ namespace exemplo_windowsForms
 		private void doaçãoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			new FrmDoacao().Show();
+		}
+
+		private void timer1_Tick(object sender, EventArgs e)
+		{
+			AtualizarDataHora();
+		}
+
+		private void AtualizarDataHora()
+		{
+			lblHora.Text = "Dia e Hora atual " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
 		}
 	}
 }

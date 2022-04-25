@@ -29,6 +29,7 @@ namespace exemplo_windowsForms
         /// </summary>
         private void InitializeComponent()
         {
+			this.components = new System.ComponentModel.Container();
 			this.btnOk = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtNome = new System.Windows.Forms.TextBox();
@@ -45,6 +46,8 @@ namespace exemplo_windowsForms
 			this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.licençaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.doaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.lblHora = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -175,29 +178,44 @@ namespace exemplo_windowsForms
 			// sobreToolStripMenuItem
 			// 
 			this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-			this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.sobreToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.sobreToolStripMenuItem.Text = "Sobre";
 			this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
 			// 
 			// licençaToolStripMenuItem
 			// 
 			this.licençaToolStripMenuItem.Name = "licençaToolStripMenuItem";
-			this.licençaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.licençaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.licençaToolStripMenuItem.Text = "Licença";
 			this.licençaToolStripMenuItem.Click += new System.EventHandler(this.licençaToolStripMenuItem_Click);
 			// 
 			// doaçãoToolStripMenuItem
 			// 
 			this.doaçãoToolStripMenuItem.Name = "doaçãoToolStripMenuItem";
-			this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.doaçãoToolStripMenuItem.Text = "Doação";
 			this.doaçãoToolStripMenuItem.Click += new System.EventHandler(this.doaçãoToolStripMenuItem_Click);
+			// 
+			// timer1
+			// 
+			this.timer1.Enabled = true;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+			// 
+			// lblHora
+			// 
+			this.lblHora.AutoSize = true;
+			this.lblHora.Location = new System.Drawing.Point(589, 54);
+			this.lblHora.Name = "lblHora";
+			this.lblHora.Size = new System.Drawing.Size(57, 13);
+			this.lblHora.TabIndex = 9;
+			this.lblHora.Text = "Hora Atual";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 368);
+			this.Controls.Add(this.lblHora);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.lblEstados);
@@ -237,6 +255,8 @@ namespace exemplo_windowsForms
 		private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem licençaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem doaçãoToolStripMenuItem;
+		private System.Windows.Forms.Timer timer1;
+		private System.Windows.Forms.Label lblHora;
 	}
 }
 
