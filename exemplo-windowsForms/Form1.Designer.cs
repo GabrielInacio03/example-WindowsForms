@@ -48,6 +48,7 @@ namespace exemplo_windowsForms
 			this.doaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.lblHora = new System.Windows.Forms.Label();
+			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -135,7 +136,8 @@ namespace exemplo_windowsForms
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
-            this.infoToolStripMenuItem});
+            this.infoToolStripMenuItem,
+            this.cadastroToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -210,6 +212,13 @@ namespace exemplo_windowsForms
 			this.lblHora.TabIndex = 9;
 			this.lblHora.Text = "Hora Atual";
 			// 
+			// cadastroToolStripMenuItem
+			// 
+			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+			this.cadastroToolStripMenuItem.Text = "Cadastro";
+			this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +266,7 @@ namespace exemplo_windowsForms
 		private System.Windows.Forms.ToolStripMenuItem doaçãoToolStripMenuItem;
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label lblHora;
+		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
 	}
 }
 

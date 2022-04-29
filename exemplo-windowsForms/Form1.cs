@@ -112,5 +112,10 @@ namespace exemplo_windowsForms
 		{
 			lblHora.Text = "Dia e Hora atual " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
 		}
+
+		private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new FrmCadastro().Show();
+		}
 	}
 }
