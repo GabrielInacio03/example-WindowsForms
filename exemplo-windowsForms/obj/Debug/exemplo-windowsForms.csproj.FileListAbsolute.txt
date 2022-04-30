@@ -37,3 +37,4 @@ C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_wind
 C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.FrmDoacao.resources
 C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.FrmLicenca.resources
 C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.FrmCadastro.resources
+C:\Repositorios\example-WindowsForms\exemplo-windowsForms\obj\Debug\exemplo_windowsForms.MDIParentPrincipal.resources
