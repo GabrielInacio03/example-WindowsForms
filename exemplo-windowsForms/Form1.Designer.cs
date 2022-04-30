@@ -30,6 +30,7 @@ namespace exemplo_windowsForms
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.btnOk = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtNome = new System.Windows.Forms.TextBox();
@@ -46,9 +47,11 @@ namespace exemplo_windowsForms
 			this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.licençaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.doaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.lblHora = new System.Windows.Forms.Label();
-			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+			this.btnNotificacao = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -198,6 +201,13 @@ namespace exemplo_windowsForms
 			this.doaçãoToolStripMenuItem.Text = "Doação";
 			this.doaçãoToolStripMenuItem.Click += new System.EventHandler(this.doaçãoToolStripMenuItem_Click);
 			// 
+			// cadastroToolStripMenuItem
+			// 
+			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+			this.cadastroToolStripMenuItem.Text = "Cadastro";
+			this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+			// 
 			// timer1
 			// 
 			this.timer1.Enabled = true;
@@ -212,18 +222,29 @@ namespace exemplo_windowsForms
 			this.lblHora.TabIndex = 9;
 			this.lblHora.Text = "Hora Atual";
 			// 
-			// cadastroToolStripMenuItem
+			// notifyIcon1
 			// 
-			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-			this.cadastroToolStripMenuItem.Text = "Cadastro";
-			this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+			this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+			this.notifyIcon1.Text = "winForms";
+			this.notifyIcon1.Visible = true;
+			this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+			// 
+			// btnNotificacao
+			// 
+			this.btnNotificacao.Location = new System.Drawing.Point(682, 288);
+			this.btnNotificacao.Name = "btnNotificacao";
+			this.btnNotificacao.Size = new System.Drawing.Size(106, 23);
+			this.btnNotificacao.TabIndex = 10;
+			this.btnNotificacao.Text = "Notificação";
+			this.btnNotificacao.UseVisualStyleBackColor = true;
+			this.btnNotificacao.Click += new System.EventHandler(this.btnNotificacao_Click);
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 368);
+			this.Controls.Add(this.btnNotificacao);
 			this.Controls.Add(this.lblHora);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.dataGridView1);
@@ -234,6 +255,7 @@ namespace exemplo_windowsForms
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnOk);
 			this.Controls.Add(this.menuStrip1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form1";
 			this.Text = "Aplicação WindowsForms .Net Framework";
@@ -267,6 +289,8 @@ namespace exemplo_windowsForms
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label lblHora;
 		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+		private System.Windows.Forms.NotifyIcon notifyIcon1;
+		private System.Windows.Forms.Button btnNotificacao;
 	}
 }
 

@@ -31,6 +31,11 @@ namespace exemplo_windowsForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
+			var contextMenu = new ContextMenu();
+			contextMenu.MenuItems.Add(new MenuItem("Fechar", sairToolStripMenuItem_Click));
+			contextMenu.MenuItems.Add(new MenuItem("Abrir Cadastro", cadastroToolStripMenuItem_Click));
+			notifyIcon1.ContextMenu = contextMenu;
+
 			AtualizarDataHora();
 			ddlEstado.DataSource = Estado.Lista();
             ddlEstado.Text = "[Selecione]";
@@ -116,6 +121,23 @@ namespace exemplo_windowsForms
 		private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			new FrmCadastro().Show();
+		}
+
+		private void notifyIcon1_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Cliquei no ícone!!!");
+		}
+
+		private void btnNotificacao_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				notifyIcon1.ShowBalloonTip(100, "Nova Notificação", txtNome.Text, ToolTipIcon.Info);
+			}
+			catch (Exception er)
+			{
+				MessageBox.Show("Erro Inesperado: "+ er);
+			}
 		}
 	}
 }
